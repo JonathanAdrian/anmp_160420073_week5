@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "release_year": 2010,
+    "genre": "Science Fiction",
+    "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"],
+    "director": {
+      "name": "Christopher Nolan",
+      "nationality": "British-American"
+    }
+  },
+  {
+    "id": 2,
+    "title": "The Shawshank Redemption",
+    "release_year": 1994,
+    "genre": "Drama",
+    "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
+    "director": {
+      "name": "Frank Darabont",
+      "nationality": "American"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Pulp Fiction",
+    "release_year": 1994,
+    "genre": "Crime",
+    "actors": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"],
+    "director": {
+      "name": "Quentin Tarantino",
+      "nationality": "American"
+    }
+  },
+  {
+    "id": 4,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "release_year": 2001,
+    "genre": "Fantasy",
+    "actors": ["Elijah Wood", "Ian McKellen", "Viggo Mortensen"],
+    "director": {
+      "name": "Peter Jackson",
+      "nationality": "New Zealander"
+    }
+  },
+  {
+    "id": 5,
+    "title": "The Dark Knight",
+    "release_year": 2008,
+    "genre": "Action",
+    "actors": ["Christian Bale", "Heath Ledger", "Gary Oldman"],
+    "director": {
+      "name": "Christopher Nolan",
+      "nationality": "British-American"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Avatar",
+    "release_year": 2009,
+    "genre": "Science Fiction",
+    "actors": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
+    "director": {
+      "name": "James Cameron",
+      "nationality": "Canadian"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Forrest Gump",
+    "release_year": 1994,
+    "genre": "Drama",
+    "actors": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+    "director": {
+      "name": "Robert Zemeckis",
+      "nationality": "American"
+    }
+  },
+  {
+    "id": 8,
+    "title": "The Matrix",
+    "release_year": 1999,
+    "genre": "Science Fiction",
+    "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+    "director": {
+      "name": "The Wachowskis",
+      "nationality": "American"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Gladiator",
+    "release_year": 2000,
+    "genre": "Action",
+    "actors": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
+    "director": {
+      "name": "Ridley Scott",
+      "nationality": "British"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "release_year": 2004,
+    "genre": "Romantic Science Fiction",
+    "actors": ["Jim Carrey", "Kate Winslet", "Elijah Wood"],
+    "director": {
+      "name": "Michel Gondry",
+      "nationality": "French"
+    }
+  }
+]
