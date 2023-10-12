@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/movieListFragment">
+    app:startDestination="@id/itemHome">
 
     <fragment
-        android:id="@+id/studentListFragment"
+        android:id="@+id/itemCart"
         android:name="com.example.advweek4.view.StudentListFragment"
         android:label="fragment_student_list"
         tools:layout="@layout/fragment_student_list" >
@@ -20,8 +20,23 @@
         android:label="fragment_student_detail"
         tools:layout="@layout/fragment_student_detail" />
     <fragment
-        android:id="@+id/movieListFragment"
+        android:id="@+id/itemHome"
         android:name="com.example.advweek4.view.MovieListFragment"
         android:label="fragment_movie_list"
         tools:layout="@layout/fragment_movie_list" />
+    <fragment
+        android:id="@+id/itemMenu"
+        android:name="com.example.advweek4.view.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/itemOrder"
+        android:name="com.example.advweek4.view.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" />
+    <fragment
+        android:id="@+id/itemProfile"
+        android:name="com.example.advweek4.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
