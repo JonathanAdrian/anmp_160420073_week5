@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.advweek4.R
 import com.example.advweek4.model.Movie
-import com.example.advweek4.model.Student
 
 class MovieListAdapter (val movieList:ArrayList<Movie>)
     :RecyclerView.Adapter<MovieListAdapter.MovieViewHolder>(){
@@ -20,8 +19,8 @@ class MovieListAdapter (val movieList:ArrayList<Movie>)
     }
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
-        var txtIdMovie = holder.itemView.findViewById<TextView>(R.id.txtIdMovie)
-        var txtTitle = holder.itemView.findViewById<TextView>(R.id.txtTitle)
+        var txtIdMovie = holder.itemView.findViewById<TextView>(R.id.txtNama)
+        var txtTitle = holder.itemView.findViewById<TextView>(R.id.txtHarga)
         var txtReleaseYear = holder.itemView.findViewById<TextView>(R.id.txtReleaseYear)
         var txtGenre = holder.itemView.findViewById<TextView>(R.id.txtGenre)
         var txtActor = holder.itemView.findViewById<TextView>(R.id.txtActor)

@@ -21,8 +21,8 @@ class StudentListAdapter(val studentList:ArrayList<Student>)
     }
 
     override fun onBindViewHolder(holder: StudentViewHolder, position: Int) {
-        val txtId = holder.itemView.findViewById<TextView>(R.id.txtIdMovie)
-        val txtName = holder.itemView.findViewById<TextView>(R.id.txtTitle)
+        val txtId = holder.itemView.findViewById<TextView>(R.id.txtNama)
+        val txtName = holder.itemView.findViewById<TextView>(R.id.txtHarga)
         val btnDetail = holder.itemView.findViewById<Button>(R.id.btnDetail)
         txtId.text = studentList[position].id
         txtName.text = studentList[position].name
