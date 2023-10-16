@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.advweek4.R
@@ -26,8 +25,8 @@ class MenuAdapter(private val menu: ArrayList<Menu>, private val menuDetailViewM
     }
 
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
-        var txtNama = holder.itemView.findViewById<TextView>(R.id.txtNama)
-        var txtHarga = holder.itemView.findViewById<TextView>(R.id.txtHarga)
+        var txtNama = holder.itemView.findViewById<TextView>(R.id.txtNamaHome)
+        var txtHarga = holder.itemView.findViewById<TextView>(R.id.txtWaitressHome)
         var txtKategori = holder.itemView.findViewById<TextView>(R.id.txtKategori)
         var imgFoto = holder.itemView.findViewById<ImageView>(R.id.imgFoto)
         var btnDetail = holder.itemView.findViewById<Button>(R.id.btnDetail)

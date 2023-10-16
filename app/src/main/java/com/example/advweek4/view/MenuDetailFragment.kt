@@ -27,7 +27,7 @@ class MenuDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         // Initialize the ViewModel
-        viewModel = ViewModelProvider(this).get(MenuDetailViewModel::class.java)
+        viewModel = ViewModelProvider(requireActivity()).get(MenuDetailViewModel::class.java)
 
         // Observe the LiveData
         viewModel.menuLD.observe(viewLifecycleOwner, { menu ->
@@ -35,15 +35,34 @@ class MenuDetailFragment : Fragment() {
             val txtHargaDetail = view?.findViewById<TextView>(R.id.txtHargaDetail)
             val txtDeskripsiDetail = view?.findViewById<TextView>(R.id.txtDeskripsiDetail)
             val imgFotoDetail = view?.findViewById<ImageView>(R.id.imgFotoDetail)
-//            val txtJumlahDetail = view?.findViewById<TextView>(R.id.txtJumlahDetail)
-//            val btnAddDetail = view?.findViewById<Button>(R.id.btnAddDetail)
-//            val btnTambahDetail = view?.findViewById<Button>(R.id.btnTambahDetail)
-//            val btnKurangDetail = view?.findViewById<Button>(R.id.btnKurangDetail)
 
             txtNamaDetail?.text = menu.nama
             txtHargaDetail?.text = menu.harga.toString()
             txtDeskripsiDetail?.text = menu.deskripsi
             Picasso.get().load(menu.foto).into(imgFotoDetail)
         })
+
+        var jumlah = 1
+        var txtJumlahDetail = view?.findViewById<TextView>(R.id.txtJumlahDetail)
+        val btnAddDetail = view?.findViewById<Button>(R.id.btnAddDetail)
+        val btnTambahDetail = view?.findViewById<Button>(R.id.btnTambahDetail)
+        val btnKurangDetail = view?.findViewById<Button>(R.id.btnKurangDetail)
+
+        btnTambahDetail?.setOnClickListener{
+            jumlah++
+            txtJumlahDetail?.text = jumlah.toString()
+        }
+
+        btnKurangDetail?.setOnClickListener{
+            if (jumlah > 1) {
+                jumlah--
+                txtJumlahDetail?.text = jumlah.toString()
+            }
+        }
+
+        // Add to cart disini.
+        btnAddDetail?.setOnClickListener{
+
+        }
     }
 }

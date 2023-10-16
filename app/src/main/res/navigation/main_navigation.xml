@@ -13,6 +13,9 @@
         <action
             android:id="@+id/actionMenuDetailFragment"
             app:destination="@id/menuDetailFragment" />
+        <action
+            android:id="@+id/actionItemHome"
+            app:destination="@id/itemHome" />
     </fragment>
     <fragment
         android:id="@+id/itemOrder"

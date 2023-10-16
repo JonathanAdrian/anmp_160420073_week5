@@ -24,7 +24,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/txtNama"
+                android:id="@+id/txtNamaHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ID"
@@ -36,7 +36,7 @@
                 app:layout_constraintVertical_bias="0.179" />
 
             <TextView
-                android:id="@+id/txtHarga"
+                android:id="@+id/txtWaitressHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Student Name"
